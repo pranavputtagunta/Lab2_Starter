@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meeting minutes for the Hackathon Brainstorming Meeting."
+    />
+    <title>Hackathon Brainstorming Meeting Minutes</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="screenshots/hackathon_whiteboard.png"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Hackathon Brainstorming Meeting</h1>
+      <h2>Topic: Brainstorming</h2>
+      <h3>Date: 4/13/2026</h3>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new-business">New Business</a></li>
+          <li><a href="#misc">Miscellaneous</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#feedback-form">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance List</h2>
+        <ul>
+          <li>Pranav</li>
+          <li>Sid</li>
+          <li>Neil</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <p>
+          For this meeting, we need to discuss the tracks presented at the
+          hackathon. Based on these tracks, we need to come up with a few
+          problem statements for which we are able to build memorable and unique
+          solutions.
+        </p>
+        <p>
+          Quick note: we should compare ideas by <strong>impact</strong>,
+          <strong>feasibility</strong>, and <strong>originality</strong>.
+        </p>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>
+          Last meeting, we confirmed that everyone was attending the hackathon.
+          We did not come up with an idea for the hackathon.
+        </p>
+        <ol>
+          <li>Finalize at least one strong project direction.</li>
+          <li>Choose one backup idea in case of scope concerns.</li>
+        </ol>
+      </section>
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <p>
+          We need to talk about potential problems that can be solved, as well
+          as discussing ways to make our project unique.
+        </p>
+        <div>
+          <p>
+            Candidate focus areas: <span>education</span>, <span>health</span>,
+            and <span>campus life</span>.
+          </p>
+        </div>
+      </section>
+
+      <section id="misc">
+        <h2>Miscellaneous Comments, Questions, and Concerns</h2>
+        <p>
+          Would we like to do a <b>hardware-focused</b>,
+          <b>software-focused</b>, or <b>combined</b> project?
+        </p>
+        <p>
+          Team reminder:<br />
+          Try to keep the MVP small, then iterate.
+        </p>
+        <p>
+          We are <em>excited</em> about building something useful and
+          <i>memorable</i> for demo day.
+        </p>
+        <details>
+          <summary>Open for a quick tie-breaker question</summary>
+          <p>
+            If two ideas are equally strong, should we pick the one with lower
+            risk or the one with higher innovation?
+          </p>
+        </details>
+      </section>
+
+      <section id="media">
+        <h2>Diagrams and Meeting Recordings</h2>
+        <p>Whiteboard diagram snapshot:</p>
+        <img
+          src="screenshots/hackathon_whiteboard.png"
+          alt="Whiteboard sketch from brainstorming discussion"
+          width="500"
+        />
+
+        <h3>Audio Recording</h3>
+        <audio controls src="media/sample_audio.mp3">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video controls width="500" src="media/sample_vid.mp4">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <hr />
+
+      <section id="feedback-form">
+        <h2>Quick Team Form (Practice)</h2>
+        <form>
+          <fieldset>
+            <p>
+              Name:
+              <input
+                type="text"
+                id="member-name"
+                name="member-name"
+                list="team-members"
+                placeholder="Enter your name"
+              />
+            </p>
+
+            <datalist id="team-members">
+              <option value="Pranav"></option>
+              <option value="Sid"></option>
+              <option value="Neil"></option>
+            </datalist>
+
+            <p>
+              Best day for follow-up:
+              <input type="date" id="available-date" name="available-date" />
+            </p>
+
+            <p>Preferred project type:</p>
+            <p>
+              <input type="radio" name="project-type" value="hardware" />
+              Hardware-focused
+              <input type="radio" name="project-type" value="software" />
+              Software-focused
+              <input type="radio" name="project-type" value="combined" />
+              Combined
+            </p>
+
+            <p>
+              <input type="checkbox" name="agree-scope" value="yes" />
+              I agree to keep initial scope small.
+            </p>
+
+            <p>
+              Favorite hackathon track:
+              <select id="track-select" name="track-select">
+                <option value="">--Choose one--</option>
+                <option value="ai">AI / ML</option>
+                <option value="social-impact">Social Impact</option>
+                <option value="developer-tools">Developer Tools</option>
+              </select>
+            </p>
+
+            <p>
+              Additional idea notes:<br />
+              <textarea
+                id="ideas"
+                name="ideas"
+                rows="4"
+                cols="40"
+                placeholder="Share potential problem statements..."
+              ></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Meeting minutes prepared for CSE 110 Lab 2 practice.</p>
+    </footer>
+  </body>
+</html>
